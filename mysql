@@ -1,0 +1,5 @@
+create database finalproj;
+use finalproj;
+create table data (id INT Auto_Increment Primary Key,username VARCHAR(50),password VARCHAR(50));
+create table doctlist (DoctorID INT Auto_Increment Primary Key,DoctorName VARCHAR(100),Email VARCHAR(100),Phone VARCHAR(100),Specialization VARCHAR(100),Status VARCHAR(100));
+create table patient (PatientID INT Auto_Increment PRIMARY KEY, PatientName VARCHAR(100), Email VARCHAR(100), Phone VARCHAR(100),ApptID INT(11), ApptDate DATE, DoctorID INT);
